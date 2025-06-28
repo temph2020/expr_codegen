@@ -12,7 +12,7 @@ from expr_codegen.polars.printer import PolarsStrPrinter
 
 def get_groupby_from_tuple(tup, func_name, drop_cols):
     """从传入的元组中生成分组运行代码"""
-    prefix2, *_ = tup
+    prefix2, *_ =  tup
 
     if prefix2 == TS:
         # 组内需要按时间进行排序，需要维持顺序
